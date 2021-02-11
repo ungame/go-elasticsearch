@@ -30,7 +30,7 @@ Saída
 }
 ```
 
-Adicionar dados a index:
+Adicionar dados ao index:
 
 ```bash
 curl -H "Content-Type: application/json" -d "{\"name\":\"Alice\",\"age\":17,\"average_score\":81.1}" http://localhost:9200/students/doc?pretty
@@ -139,7 +139,7 @@ Saída
 }
 ```
 
-Fazer uma busca
+Fazer uma busca simples
 
 ```bash
 curl -H "Content-Type: application/json" -d "{\"query\":{\"match\": {\"name\": \"doe\"}}}" http://localhost:9200/_search?pretty
@@ -213,7 +213,7 @@ Saída
 }
 ```
 
-Delete Index
+Deletar Index
 
 ```
 curl -X DELETE localhost:9200/students
